@@ -12,7 +12,7 @@ class FileInputTest extends PetTest {
 
     @BeforeEach
     void setUp() {
-        FileInput indata = new FileInput("animals.txt");
+
     }
 
     @AfterEach
@@ -21,12 +21,15 @@ class FileInputTest extends PetTest {
 
     @Test
     void fileReadLine() {
-
-
+        FileInput indata = new FileInput("animals.txt");
         String line;
         line = indata.fileReadLine();
         assertTrue(line instanceof String);
 
+        FileInput err = new FileInput("animals1.txt");
+        String line1;
+        line1 = err.fileReadLine();
+        assertFalse(line1 instanceof String);
 
     }
 
