@@ -3,9 +3,12 @@ package us.kpatrick.test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import us.kpatrick.test.PetTest;
+import us.kpatrick.Cat;
+import us.kpatrick.Talkable;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.ArrayList;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MainTest extends PetTest {
 
@@ -23,5 +26,18 @@ class MainTest extends PetTest {
 
     @Test
     void printOut() {
+    }
+
+    @Test
+    void addCat() {
+
+    }
+
+    @Test
+    void addDog() {
+    }
+
+    @Test
+    void addStudent() {
     }
 }
