@@ -35,8 +35,6 @@ class MainTest extends PetTest {
     void addCat() {
         Cat c = new Cat(4,"fluffy");
         assertNotNull(c);
-
-
     }
 
     @Test
